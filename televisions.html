@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisions - Australian Appliance Energy Data</title>
+    <!-- CSS is now centralized in style.css -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- 加上 onclick 呼叫 loadPage -->
+            <a href="index.html" title="Return to Home" onclick="loadPage(event, 'index.html', 'link-home')">
+                <img src="logo.png" alt="Power Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <!-- 全部換成 loadPage 的寫法，並設定這頁的高亮 -->
+                    <li><a id="link-home" href="index.html" onclick="loadPage(event, 'index.html', 'link-home')">Home</a></li>
+                    <li><a id="link-televisions" href="televisions.html" onclick="loadPage(event, 'televisions.html', 'link-televisions')" class="active-link">Televisions</a></li>
+                    <li><a id="link-about" href="about.html" onclick="loadPage(event, 'about.html', 'link-about')">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="televisions">
+            <h1>Television Energy Tips</h1>
+            
+            <div class="quick-facts-box" style="margin-top: 0; margin-bottom: 40px;">
+                <p><strong>Size & technology matter.</strong> Larger screens and older tech (e.g., plasma) use more energy. Modern LED/LCD and OLED sets are generally more efficient.</p>
+                <ul>
+                    <li>Use the TV's <em>Energy Saver</em> or <em>Eco</em> mode and reduce brightness where comfortable.</li>
+                    <li>Disable "always-listening" voice features if you don't use them; they can add standby draw.</li>
+                    <li>Consider star rating and annual kWh on the energy label when purchasing.</li>
+                </ul>
+                <p style="margin-top: 15px; font-style: italic; color: #666;">Placeholder note: Insert simple examples of annual kWh for common TV sizes in Australia to make this page concrete.</p>
+            </div>
+
+            <h2>TV Energy Insights: Data Story</h2>
+            <p>This section presents findings from the Australian Government's Television Energy Rating dataset. The aim is to help Australian consumers make informed decisions about technology, size, brand, and efficiency.</p>
+
+            <!-- Chart 1 -->
+            <div class="chart-container">
+                <h3>Chart 1: What type of TV screen technologies are currently available in Australia and which are the most frequent?</h3>
+                <img src="chart_1.png" alt="Pie chart showing TV technologies" class="chart-image">
+                <p class="chart-description">LCD (LED) is overwhelmingly the most frequent screen technology. The vast majority of TV models across major brands utilize LCD (LED) panels, significantly outnumbering both OLED and standard LCD options.</p>
+            </div>
+
+            <!-- Chart 2 -->
+            <div class="chart-container">
+                <h3>Chart 2: What screen sizes are currently available and which are the most frequent?</h3>
+                <img src="chart_2.png" alt="Bar chart showing screen sizes" class="chart-image">
+                <p class="chart-description">A variety of standard screen sizes are available, with 65.0-inch and 55.0-inch being the most frequent by a significant margin.</p>
+            </div>
+
+            <!-- Chart 3 -->
+            <div class="chart-container">
+                <h3>Chart 3: Which brands have the greatest number of different models?</h3>
+                <img src="chart_3.png" alt="Bar chart showing TV brands" class="chart-image">
+                <p class="chart-description">Kogan has the largest number with 807 models, followed by LG with 723 models and Samsung Electronics with 699 models.</p>
+            </div>
+
+            <!-- Chart 4 -->
+            <div class="chart-container">
+                <h3>Chart 4: Which type of screen technology consumes the least amount of power?</h3>
+                <img src="chart_4.png" alt="Chart 4" class="chart-image">
+                <p class="chart-description">LCD consumes the least amount of power, with a median power consumption of 71.35 W.
+                   For comparison, LCD (LED) has a median of 106 W and OLED consumes the most with a median of 112.70 W.</p>
+            </div>
+
+            <!-- Chart 5 -->
+            <div class="chart-container">
+                <h3>Chart 5: What is the relationship between screen size and power use?</h3>
+                <img src="chart_5.png" alt="Chart 5" class="chart-image">
+                <p class="chart-description">There is a strong positive correlation between screen size and power use. As the screen size increases, the average power consumption also clearly increases. 
+                    Additionally, the variation in power consumption becomes significantly wider at larger screen sizes</p>
+            </div>
+
+            <!-- Chart 6 -->
+            <div class="chart-container">
+                <h3>Chart 6: What is the relationship between star rating and screen size?</h3>
+                <img src="chart_6.png" alt="Chart 6" class="chart-image">
+                <p class="chart-description">There is no strong linear relationship between screen size and star rating, as televisions across almost all sizes exhibit a wide, overlapping variance in their energy efficiency scores</p>
+            </div>
+
+            <!-- Conclusion Section -->
+            <h2>Conclusion</h2>
+            <p>A 55-inch or 65-inch LCD (LED) television from a major brand like Samsung, LG or Hisense is the best overall choice for buyers, offering the ideal balance of vast market selection, proven energy efficiency and practical value without the excessive power consumption of ultra-large displays.</p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Elvin Pui Yung Kit</p>
+        <p><small>Code and content generated with the assistance of GenAI.</small></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
